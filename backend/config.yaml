@@ -3,3 +3,11 @@ server:
   idle_timeout: 60
   read_timeout: 5
   write_timeout: 10
+database:
+  ping_timeout: 5
+  query_timeout: 10
+  transaction_timeout: 30
+initial_admin:
+  username: blackcore
+  full_name: 管理员
+  email: blackcore@ecnc.work

@@ -1,0 +1,15 @@
+services:
+  postgres:
+    image: postgres:17.2
+    container_name: postgres
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    environment:
+      - POSTGRES_USER=postgres
+      - POSTGRES_DB=ecnc_sso_db
+      - POSTGRES_PASSWORD=${POSTGRES_PASSWORD}
+
+volumes:
+  postgres_data:

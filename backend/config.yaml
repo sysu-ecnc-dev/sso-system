@@ -1,0 +1,5 @@
+server:
+  port: 3000
+  idle_timeout: 60
+  read_timeout: 5
+  write_timeout: 10
